@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Site</title>
+</head>
+
+<div class="blur-screen" onclick="toggleMenu()"></div>
+
+<body>
+    <header class="main-header flex">
+        <nav class="main-nav flex main-container space-between fg-1 wrap">
+            <h1 class="logo main-logo center-childs">Blogin<span>.</span></h1>
+            <ul class="pages-list clean-list flex light-text">
+                <li><a class="center-childs">Jornal</a></li>
+                <li><a class="center-childs">About</a></li>
+                <li><a class="center-childs">Work</a></li>
+                <li><a class="center-childs">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-button" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <main class="cards-container main-container">
+
+        <article class="card mmain-container flex wrap">
+            <img src="images/card-image-1.jpg" alt="" class="card-image">
+            <div class="card-text flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-more-button center-childs">
+                    <span>
+                        Continue reading
+                    </span>
+                    <img class="right-arrow small-arrow show-on-hover" src="images/right-arrow.png">
+                </button>
+            </div>
+        </article>
+
+        <article class="card mmain-container flex wrap">
+            <img src="images/card-image-2.jpg" alt="" class="card-image">
+            <div class="card-text flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-more-button center-childs">
+                    <span>
+                        Continue reading
+                    </span>
+                    <img class="right-arrow small-arrow show-on-hover" src="images/right-arrow.png">
+                </button>
+            </div>
+        </article>
+
+        <article class="card mmain-container flex wrap">
+            <img src="images/card-image-3.jpg" alt="" class="card-image">
+            <div class="card-text flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-more-button center-childs">
+                    <span>
+                        Continue reading
+                    </span>
+                    <img class="right-arrow small-arrow show-on-hover" src="images/right-arrow.png">
+                </button>
+            </div>
+        </article>
+
+        <nav class="cards-nav flex wrap space-between align-center">
+            <button class="cards-navigation-button center-childs flex row-reverse">
+                <span>
+                    PREVIOUS
+                </span>
+                <img class=" right-arrow small-arrow show-on-hover" src="images/left-arrow-grey.png">
+            </button>
+            <button class="cards-navigation-button center-childs">
+                <span>
+                    NEXT
+                </span>
+                <img class="right-arrow small-arrow show-on-hover" src="images/right-arrow-grey.png">
+            </button>
+        </nav>
+    </main>
+
+    <footer class="main-footer center-childs flex column">
+        <h1 class="logo logo footer-logo">Blogin<span>.</span></h1>
+        <p class="copyrights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+        <article class="social-bar flex flex-row">
+            <button class="facebook-button social-bar-button center-childs">
+                <img src="images/facebook-icon.svg" alt="">
+            </button>
+            <button class="twitter-button social-bar-button center-childs">
+                <img src="images/twitter-icon.svg" alt="">
+            </button>
+            <button class="instagram-button social-bar-button center-childs">
+                <img src="images/instagram-icon.svg" alt="">
+            </button>
+            <button class="linkedin-button social-bar-button center-childs">
+                <img src="images/linkedin-icon.svg" alt="">
+            </button>
+        </article>
+    </footer>
+</body>
+
+
+<script>
+    function toggleMenu() {
+        document.body.classList.toggle('hamburger-open');
+    }
+</script>
+
+</html>

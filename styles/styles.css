@@ -1,0 +1,470 @@
+/* Fonts: */
+
+@font-face {
+    font-family: eurofurence;
+    src: url(../fonts/eurofurnce/regular.ttf);
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url(../fonts/lato/bold.ttf);
+}
+
+@font-face {
+    font-family: myriad;
+    src: url(../fonts/myriad-pro/regular.OTF);
+}
+
+
+/* General: */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: myriad, serif;
+    color: #606060;
+    line-height: 1.25;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    font-weight: unset;
+}
+
+p {
+    margin-block-start: unset;
+    margin-block-end: unset;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    background-color: unset;
+    cursor: pointer;
+    border: unset;
+}
+
+
+/* Layout: */
+
+.main-container {
+    max-width: 1040px;
+}
+
+
+/* Helpers: */
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.center-childs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-text {
+    color: #ffffff !important;
+}
+
+/* Flex helpers: */
+
+.flex {
+    display: flex;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.fg-1 {
+    flex-grow: 1;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.flex-row {
+    flex-direction: row wrap;
+}
+
+.flex.row-reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* Components: */
+
+/* Nav: */
+
+.main-header {
+    height: 130px;
+    background-color: #292929;
+    border: 1px solid  #1e1e1e;
+    border-bottom: 10px solid #1e1e1e;
+}
+
+.main-header > .hamburger-button {
+    display: none;
+}
+.main-nav {
+    margin: 0 auto;
+}
+
+.main-nav a {
+    height: 100%;
+    box-sizing: content-box;
+    border-inline-start: 1px solid #1e1e1e;
+}
+.main-nav li:last-child a {
+    border-inline-end: 1px solid #1e1e1e;
+}
+
+.main-nav .pages-list > *{
+    font-family: lato-bold;
+    min-width: 130px;
+}
+
+.main-nav a:hover {
+    color: #58c93a;
+    border-bottom: 7px solid #58c93a;
+}
+
+
+.logo {
+    font-family: eurofurence;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.logo span {
+    color: #58c93a;
+}
+.main-nav .logo {
+    color: #ffffff;
+}
+
+/* Cards: */
+
+.cards-container {
+    margin: 0 auto;
+    border-right: 1px solid #e1e0e0;
+    border-left: 1px solid #e1e0e0;
+    padding-top: 80px;
+}
+
+.card {
+    /* width: 100%; */
+    height: 19.375rem;
+    margin-bottom: 70px;
+}
+.card:last-of-type(article) {
+    margin-bottom: 85px;
+}
+
+.card > img, .card > .card-text {
+    width: 500px;
+}
+.card > img {
+    margin-inline-end: 20px;
+    object-fit: cover;
+}
+.card > .card-text {
+    margin-inline-start: 20px;
+    padding-inline-end: 25px;
+}
+
+.card-text > .card-title {
+    font-family: myriad;
+    font-size: 1.75rem;
+    line-height: 1.07;
+    color: #4f4e4e;
+    text-transform: uppercase;
+
+}
+.card-text > .card-content {
+    font-family: myriad;
+    color: #606060;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.card-text > .card-more-button {
+    font-family: lato-bold;
+    color: #c2c1c1;
+    border: 2px solid #c2c1c1;
+    align-self: start;
+    border-radius: 100px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    /* transition: padding 0.8s; */
+}
+.card-more-button:hover {
+    border-color: #58c93a;
+    color: #58c93a;
+}
+
+.card-more-button span {
+    margin-inline-end: 0.5rem;
+}
+.small-arrow {
+    height: 1rem;
+}
+.card-more-button > img {
+    display: none;
+}
+.card-more-button:hover img {
+    display: block;
+}
+
+
+/* cards Navigation Bar: */
+
+.cards-container > .cards-nav {
+    text-transform: uppercase;
+    /* background-color: aqua; */
+    padding: 1.5rem 1.2rem;
+    border-top: 1px solid #e1e0e0;
+}
+
+.cards-nav > button {
+    font-family: lato-bold;
+    font-size: 1.125rem;
+    color:  #818181;
+    border: unset;
+    /* background-color: tomato; */
+}
+.cards-nav > button:hover {
+    color:  #555555;
+}
+
+.cards-nav > button:first-child > span {
+    margin-inline-start: 0.5em;
+}
+.cards-nav > button:last-child > span {
+    margin-inline-end: 0.5em;
+}
+
+
+/* Footer: */
+
+.main-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e1e0e0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.main-footer > *:not(:last-child) {
+    margin-bottom: 40px;
+}
+.main-footer > .logo {
+    color: #292929;
+}
+.main-footer > .copyrights {
+    font-family: myriad;
+    font-size: 0.8125rem;
+    color: #a6a6a6;
+    text-align: center;
+}
+
+.social-bar > button {
+    background-color: #e5e5e5;
+    height: 45px;
+    width: 45px;
+    border-radius: 1px;
+}
+.social-bar > button:not(:last-child) {
+    margin-inline-end: 20px;
+}
+.social-bar-button:hover.facebook-button {
+    background-color: #039BE5;
+}
+.social-bar-button:hover.twitter-button {
+    background-color: #4E7AB5;
+}
+.social-bar-button:hover.instagram-button {
+    background-image: linear-gradient(70deg, #FFDD55, #FF543F, #FC5245, #E64771, #D53E91, #CC39A4, #C837AB, #4168C9);
+}
+.social-bar-button:hover.linkedin-button {
+    background-color: #039BE5;
+}
+
+.social-bar > button > img {
+    width: 65%;
+    max-height: 90%;
+}
+
+
+/* Hamburger menu: */
+
+.blur-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(100%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 0.8s;
+}
+
+
+
+/* From desktop to mini desktop: give more space to the cards content, take the space from the card images width: */
+
+@media (max-width: 900px) {
+    .main-container {
+        max-width: 100vw;
+    }
+
+    .card {
+        padding-left: 10px;
+    }
+
+    .card > img {
+        width: 300px;
+    }
+
+    .card-text > *:first-child {
+        margin-top: 10px;
+    }
+    .card-text > *:last-child {
+        margin-bottom: 10px;
+    }
+}
+
+/* From little desktop to desktop : change the main-nav-bar to a hamburger menu, and make the cards look touchble: */
+
+@media (max-width: 740px) {
+    .cards-container {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .card {
+        padding-left: unset;
+        box-shadow: 0px 0px 16px 0px #aaaaaa;
+    }
+    .cards-nav {
+        border-top: unset !important;
+    }
+
+    .card > img {
+        width: 200px;
+    }
+
+}
+
+/* From tablet to mobile: change the main-nav-bar to a hamburger menu: */
+
+@media (max-width: 740px) {
+
+    .main-nav > .logo {
+        margin-inline-start: 50px;
+    }
+
+    body.hamburger-open .blur-screen {
+        transform: unset;
+        backdrop-filter: blur(10px);
+    }
+
+    .hamburger-button {
+        display: block !important;
+        /* color: white; */
+        background-color: white;
+        align-self: center;
+        margin-inline-end: 10px;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .main-nav > ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 40vw;
+        background-color: white;
+        color: black !important;
+        flex-direction: column;
+        padding-top: 30px;
+        z-index: 20;
+        transform: translate(100%);
+        transition: transform 0.8s;
+    }
+    body.hamburger-open .main-nav > ul {
+        transform: translate(0);
+    }
+
+    .main-nav > ul > li {
+        margin-bottom: 20px;
+    }
+
+    .pages-list a {
+        border-left: unset;
+    }
+    .main-nav li:last-of-type a {
+        border-inline-end: unset !important;
+    }
+
+    .cards-container {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .card {
+        padding-left: unset;
+        box-shadow: 0px 0px 16px 0px #aaaaaa;
+    }
+    .cards-nav {
+        border-top: unset !important;
+    }
+
+    .card > img {
+        width: 200px;
+    }
+
+}
+
+
+@media (max-width: 660px) {
+    .card {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .card > img {
+        width: unset;
+        margin: unset;
+    }
+    .card > .card-text {
+        width: unset;
+    }
+
+    .card-text > *:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
